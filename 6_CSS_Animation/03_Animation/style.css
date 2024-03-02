@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* h1{
+    color: red;
+    font-size: 100px;
+}
+
+h1::after{
+    content: "and Dostniyo!";
+    color: blue;
+    font-size: 50px;
+}
+h1::before{
+    content: "✅";
+    font-size: 90pxpx;
+} */
+
+/* #box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+#box::after{
+    content: "kaise ho";
+}
+#box::before{
+    content: "Hello";
+} */
+
+body{
+    background-color: black;
+    padding: 5vw;
+}
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-weight: 600;
+    position: relative;
+}
+
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: cyan;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition:  all linear 0.3s;
+    z-index: -1;
+
+}
+button:hover::after{
+    transform: translate(-50%, -50%) scale(2);
+}
+button:hover{
+    color:black ;
+}

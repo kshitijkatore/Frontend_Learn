@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* img{
+    height: 300px;
+    position:absolute;
+    animation-name: joker;
+    animation-duration: 4s;
+    animation-delay: 1s;
+
+}
+@keyframes joker {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 80%;
+        top: 0;
+    }
+    100%{
+        left: 80%;
+        top: 50%;
+    }
+} */
+
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+}
+#box2{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes box-anime {
+    from{
+        left: 0;
+    }
+    to{
+        left: 80%;
+    }
+}

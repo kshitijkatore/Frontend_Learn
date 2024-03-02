@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* h1{
+    font-size: 20px;
+    font-family: Lora;
+    text-transform: capitalize;
+    text-decoration:underline;
+    text-align: center;
+} */
+/* #main{
+    position: relative;
+    width: 20vw;
+    height: 20vh;
+    background-color: rgb(96, 193, 161);
+}
+#two{
+    margin-top: 20px;
+    font-size: 20px;
+    color: chocolate;
+}
+
+#left{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(206, 43, 21);
+}
+#right{
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    background-color: rgb(16, 183, 52);
+    top:100%;
+} */
+
+/* FlexBox */
+
+/* #box{
+    width: 30vw;
+    height: 30vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one{
+    width: 5vw;
+    height: 5vh;
+    background-color: blueviolet;
+}
+#two{
+    width: 5vw;
+    height: 5vh;
+    background-color:blue;
+}
+#three{
+    width: 5vw;
+    height: 5vh;
+    background-color: rgb(24, 232, 55);
+} */
+
+/* pseudo element */
+/* 
+    ::before
+    ::after
+ */
+
+/* p{
+    width: fit-content;
+    position: absolute;
+}
+p::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(248, 12, 35);
+}
+p::after{
+    content: '';
+} */
+
+/* first-line/ fisrt-letter/ slection */
+/* h1::first-line{
+    color: blueviolet;
+}
+h1::first-letter{
+    font-size: 120px;
+    color: chartreuse;
+}
+h1::selection{
+    color: cornflowerblue;
+} */
+
+
+/* pseudo classes */
+/* h1:hover{
+    color: blueviolet;
+}
+button:active{
+    background-color: blueviolet;
+}
+input:focus{
+    background-color: yellow;
+}
+p:nth-child(3){
+    color: red;
+} */

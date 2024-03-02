@@ -1,0 +1,137 @@
+@font-face {
+    font-family: lora;
+    src: url(/FONT/Poppins/Poppins-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 6vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+}
+.gola{
+    height: 2.6vh;
+    width: 2.6vh;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+#nav-part2 h4{
+    font-size: 2.4vh;
+    font-weight: 500;
+}
+#nav-part2 h4 span{
+    color: rgb(134, 134, 134);
+    margin-left:1.5vw ;
+}
+#nav2{
+    height:6vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    gap: 3.4vw;
+    padding: 0vh 3vw;
+}
+#nav2 h3{
+    font-size: 2.1vh;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#content{
+    height:calc(100% - 12vh);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    /* display: none; */
+    background-color: transparent;
+    height: 8px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color:red;
+
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size:15vh;
+    font-weight: 400;
+    font-family: 'lora';
+}
+#image-content{
+    height: 60%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
+    #nav{
+        height: 5vh;
+        padding: 0vw 2vw;
+    }
+    #nav-part1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+    .gola{
+        height: 2.6vh;
+        width: 2.6vh;
+        background-color: black;
+        border-radius: 50%;
+    }
+    
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 26% 56%  18%;
+}
+#left-top-left{
+    padding: 30px;
+}
+#square{
+    height: 20px;
+    width: 20px;
+    rotate: 45deg;
+    background-color: black ;
+}
+#left-top-right{
+    padding: 15px 30px 0px 0px;
+    justify-self: right;
+    text-align: right;
+}
+#left-top-right h4{
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#left-top-right h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+#left-center{
+    /* background-color: royalblue; */
+    grid-column: 1/3;
+    padding: 40px;
+} 
+#left-center h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 6vw;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#left-center h1:nth-child(2n){
+    text-align: center;
+}
+#left-bottom{
+    grid-column: 1/3;
+    padding: 35px;
+}
+#left-bottom p{
+    width: 70%;
+    font-size:18px;
+    font-weight: 500; 
+    color: #666;
+}
+#right{
+    background-color: red;
+    grid-column:3;
+    grid-row: 1/4;
+    padding:40px;
+    padding-right: 100px;
+}
+#right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: white;
+    padding:30px;  
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#arrow i{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+@media (max-width:600px) {
+    #main{
+        width: 100%;
+        height: 100%;
+        background-color: #eaeaea;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 30%  10%;
+    }
+    #right{
+        background-color: red;
+        grid-column:1/4;
+        grid-row: 4;
+        padding:40px;
+        padding-right: 100px;
+    }
+
+}
+
+
