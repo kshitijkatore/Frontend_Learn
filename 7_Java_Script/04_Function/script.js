@@ -35,9 +35,16 @@ var abcd = function(){
 }
 
 // 3.anonymous function. --> jiska koi naam nahi rahta hai.
-function(){
-    // anonymous function
+function sumOfSomthing(a, b, callback){
+    const val1 = callback(a);
+    const val2 = callback(b);
+
+    return val1 + val2;
 }
+let call = sumOfSomthing(1, 2, function(a){
+    return a * b;
+}) 
+console.log(call);                                                                                                                        
 
 // es6 --> 1. fat arrow function.
 // a) basic fat arrow.
