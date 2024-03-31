@@ -12,4 +12,3 @@ alert("Hey");
 
 // prompt --> prompt alert ka bhaii hai, jo ki ek kadam age hai. 
 prompt("Hello")
- 
